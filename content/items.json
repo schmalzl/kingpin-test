@@ -1,0 +1,128 @@
+{
+  "_help": "Edit names, descriptions, categories, prices, unlock levels and ingredients here, then restart the server. Do NOT change commodity 'code' or tier 'key' values in a running game (they are the item ids). Category names must match those used by contacts and events (Herbal, Stimulant, Crystal, Opioid-class, Hallucinogen-class, Designer) or those links stop working.",
+  "tiers": [
+    {
+      "key": "L",
+      "label": "Low",
+      "price_multiplier": 1.0,
+      "unlock_offset": 0,
+      "volatility_multiplier": 0.8,
+      "heat_bonus": 0,
+      "note": "Entry grade. Widest customer base, thinnest margins."
+    },
+    {
+      "key": "H",
+      "label": "High",
+      "price_multiplier": 1.8,
+      "unlock_offset": 1,
+      "volatility_multiplier": 1.0,
+      "heat_bonus": 0,
+      "note": "Better quality. Steady repeat buyers."
+    },
+    {
+      "key": "P",
+      "label": "Premium",
+      "price_multiplier": 3.2,
+      "unlock_offset": 3,
+      "volatility_multiplier": 1.3,
+      "heat_bonus": 1,
+      "note": "Premium grade. Clubs and collectors pay extra."
+    },
+    {
+      "key": "E",
+      "label": "Elite",
+      "price_multiplier": 5.5,
+      "unlock_offset": 5,
+      "volatility_multiplier": 1.7,
+      "heat_bonus": 1,
+      "note": "Elite purity. Exclusive buyers, big margins, heavy attention."
+    }
+  ],
+  "commodities": [
+    {
+      "code": "GRN",
+      "name": "Greenleaf",
+      "category": "Herbal",
+      "base_price": 12,
+      "unlock_level": 1,
+      "volatility": 0.8,
+      "heat": 0,
+      "description": "Bulk dried-leaf commodity. Steady local demand, thin margins.",
+      "made_from": [
+        "Cured leaf bundles",
+        "Packing film"
+      ]
+    },
+    {
+      "code": "SPK",
+      "name": "Sparkdust",
+      "category": "Stimulant",
+      "base_price": 20,
+      "unlock_level": 1,
+      "volatility": 1.0,
+      "heat": 1,
+      "description": "Fine powder favoured by night-shift crowds. Moves fast, swings fast.",
+      "made_from": [
+        "Synthetic base units",
+        "Purification filters"
+      ]
+    },
+    {
+      "code": "BLU",
+      "name": "Bluefrost",
+      "category": "Crystal",
+      "base_price": 45,
+      "unlock_level": 3,
+      "volatility": 1.1,
+      "heat": 1,
+      "description": "Crystalline product with a quality-sensitive customer base.",
+      "made_from": [
+        "Composite catalyst modules",
+        "Stabilization cartridges"
+      ]
+    },
+    {
+      "code": "AMB",
+      "name": "Amberline",
+      "category": "Opioid-class",
+      "base_price": 70,
+      "unlock_level": 4,
+      "volatility": 1.2,
+      "heat": 2,
+      "description": "Heavily watched category. High margin, high attention.",
+      "made_from": [
+        "Research compounds",
+        "Sealed processing packs"
+      ]
+    },
+    {
+      "code": "VLT",
+      "name": "Violetmist",
+      "category": "Hallucinogen-class",
+      "base_price": 90,
+      "unlock_level": 5,
+      "volatility": 1.3,
+      "heat": 1,
+      "description": "Niche collectors' market with erratic demand.",
+      "made_from": [
+        "Cultured stock",
+        "Quality-control kits"
+      ]
+    },
+    {
+      "code": "NVA",
+      "name": "Novaglass",
+      "category": "Designer",
+      "base_price": 140,
+      "unlock_level": 6,
+      "volatility": 1.5,
+      "heat": 2,
+      "description": "Boutique compound. Expensive, volatile, prestige buyers.",
+      "made_from": [
+        "Designer composite",
+        "Purification filters",
+        "Quality-control kits"
+      ]
+    }
+  ]
+}

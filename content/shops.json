@@ -1,0 +1,232 @@
+{
+  "_help": "Edit shops and items here, then restart the server. perks (permanent): capacity, sell_bonus_pct, heat_shield_pct, search_loss_reduction_pct, xp_bonus_pct. effects (instant): sanity, condition, hydration, nutrition, xp, rep, wanted. max_per_player 0 = unlimited. Item ids must stay unique and should not change in a running game.",
+  "shops": [
+    {
+      "id": "pharmacy",
+      "name": "Pharmacy",
+      "description": "Pills, tonics and quiet advice. No questions asked.",
+      "items": [
+        {
+          "id": "ph_calming_tea",
+          "name": "Calming Tea",
+          "description": "A little peace of mind.",
+          "price": 8,
+          "effects": {
+            "sanity": 5,
+            "hydration": 5
+          }
+        },
+        {
+          "id": "ph_sleeping_pills",
+          "name": "Sleeping Pills",
+          "description": "A full night's sleep, chemically assisted.",
+          "price": 35,
+          "effects": {
+            "sanity": 15
+          }
+        },
+        {
+          "id": "ph_vitamins",
+          "name": "Vitamin Course",
+          "description": "Keeps the body running.",
+          "price": 20,
+          "effects": {
+            "condition": 10
+          }
+        },
+        {
+          "id": "ph_trauma_kit",
+          "name": "Trauma Kit",
+          "description": "Patches you up properly.",
+          "price": 60,
+          "min_level": 2,
+          "effects": {
+            "condition": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "supermarket",
+      "name": "Super Market",
+      "description": "Cheap food, cheaper packaging.",
+      "items": [
+        {
+          "id": "sm_water",
+          "name": "Water Bottle",
+          "description": "Plain and cheap.",
+          "price": 3,
+          "effects": {
+            "hydration": 20
+          }
+        },
+        {
+          "id": "sm_soda",
+          "name": "Soda",
+          "description": "Cold, sweet, gone in a minute.",
+          "price": 4,
+          "effects": {
+            "hydration": 12,
+            "nutrition": 3
+          }
+        },
+        {
+          "id": "sm_juice",
+          "name": "Fresh Juice",
+          "description": "Almost healthy.",
+          "price": 7,
+          "effects": {
+            "hydration": 18,
+            "nutrition": 6
+          }
+        },
+        {
+          "id": "sm_snack",
+          "name": "Snack Bar",
+          "description": "Quick calories.",
+          "price": 4,
+          "effects": {
+            "nutrition": 15
+          }
+        },
+        {
+          "id": "sm_sandwich",
+          "name": "Sandwich",
+          "description": "A proper bite.",
+          "price": 9,
+          "effects": {
+            "nutrition": 30
+          }
+        },
+        {
+          "id": "sm_energy",
+          "name": "Energy Drink",
+          "description": "Sugar and caffeine.",
+          "price": 6,
+          "effects": {
+            "condition": 5,
+            "hydration": 8
+          }
+        },
+        {
+          "id": "sm_groceries",
+          "name": "Weekly Groceries",
+          "description": "A real meal for once.",
+          "price": 18,
+          "effects": {
+            "condition": 12,
+            "sanity": 3,
+            "nutrition": 45
+          }
+        },
+        {
+          "id": "sm_crates",
+          "name": "Storage Crates",
+          "description": "More room for stock.",
+          "price": 120,
+          "perks": {
+            "capacity": 5
+          },
+          "max_per_player": 4
+        }
+      ]
+    },
+    {
+      "id": "cars",
+      "name": "Car Store",
+      "description": "Wheels mean room and speed.",
+      "items": [
+        {
+          "id": "car_van",
+          "name": "Used Van",
+          "description": "Rattles, smells, carries a lot.",
+          "price": 900,
+          "min_level": 3,
+          "perks": {
+            "capacity": 20
+          },
+          "max_per_player": 1
+        },
+        {
+          "id": "car_tires",
+          "name": "Quiet Tires",
+          "description": "Less noise, less attention.",
+          "price": 600,
+          "min_level": 3,
+          "perks": {
+            "heat_shield_pct": 10
+          },
+          "max_per_player": 1
+        }
+      ]
+    },
+    {
+      "id": "gunstore",
+      "name": "Gun Store",
+      "description": "Protection for people who do not call the police.",
+      "items": [
+        {
+          "id": "gs_vest",
+          "name": "Padded Vest",
+          "description": "Softens the worst days.",
+          "price": 350,
+          "min_level": 2,
+          "perks": {
+            "search_loss_reduction_pct": 10
+          },
+          "max_per_player": 1
+        },
+        {
+          "id": "gs_alarm",
+          "name": "Alarm Kit",
+          "description": "Early warning for your stash.",
+          "price": 450,
+          "min_level": 2,
+          "perks": {
+            "heat_shield_pct": 5
+          },
+          "max_per_player": 1
+        },
+        {
+          "id": "gs_lockbox",
+          "name": "Hardened Lockbox",
+          "description": "What they cannot open, they cannot take.",
+          "price": 700,
+          "min_level": 3,
+          "perks": {
+            "search_loss_reduction_pct": 15
+          },
+          "max_per_player": 1
+        }
+      ]
+    },
+    {
+      "id": "tailor",
+      "name": "Tailor & Electronics",
+      "description": "Look the part, stay reachable.",
+      "items": [
+        {
+          "id": "tl_phone",
+          "name": "Burner Phone",
+          "description": "Better tips, faster deals.",
+          "price": 250,
+          "perks": {
+            "xp_bonus_pct": 5
+          },
+          "max_per_player": 1
+        },
+        {
+          "id": "tl_suit",
+          "name": "Sharp Suit",
+          "description": "Buyers pay more to people who look like they can afford it.",
+          "price": 400,
+          "min_level": 2,
+          "perks": {
+            "sell_bonus_pct": 3
+          },
+          "max_per_player": 1
+        }
+      ]
+    }
+  ]
+}
